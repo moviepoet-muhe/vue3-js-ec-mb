@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media all and (min-width: 750px) {
+    html{
+        font-size: 75px !important;
+    }
+    
+}
+
+/* min-width 表示最小的宽度是 750px，如果小于这个宽度说明条件不成立，大于这个宽度条件才成立 */
+@media all and (min-width: 750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+/* 表示 最大的宽度是 750px，因为 10rem = 750px */
+/* 为什么 vant 组件样式没有被限定，因为 vant 组件内部封装组件的时候，使用 scoped 样式隔离 */
